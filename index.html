@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <div id="start">
+        <div class="head">
+            <h1>Take a Quiz</h1>
+        </div>
+
+        <div class="info">
+            <input type="text" placeholder="Your name" id="username">
+            <input type="number" min="3" max="40" placeholder="Your age" id="userage">
+            <button id="infobtn">start Quiz</button>
+        </div>
+    </div>
+
+
+
+        <div id="wrapper">
+
+        <div class="heading">
+            <h1>Quiz App</h1>
+        </div>
+
+        <div id="questions">
+            <p id="que" class="que_para">1. _________ is the father of computer.</p>
+        </div>
+
+        <div id="options">
+
+            <div class="lines">
+                <input type="radio" name="option" id="" class="option" onclick="press()">
+                <p id="para1">Herman Hollerith</p>
+            </div>
+
+            <div class="lines">
+                <input type="radio" name="option" id="" class="option" onclick="press()">
+                <p id="para2">Ada Byron</p>
+            </div> 
+
+            <div class="lines">
+                <input type="radio" name="option" id="" class="option" onclick="press()">
+                <p id="para3">Blaise Pascal</p>
+            </div>
+
+            <div class="lines">   
+                <input type="radio" name="option" id="" class="option" onclick="press()">
+                <p id="para4">Charles Babbage</p>
+            </div> 
+
+        </div>
+        
+            <div class="buttons">
+                <button id="previous" onclick="pre()">Previous</button>
+                <button id="nxt" onclick="next()">Next</button>
+                <button id="submit">Submit</button>
+            </div>
+       
+    </div>
+
+
+    <div id="result">
+        <div class="top">
+            <h1>Your Score Board</h1>
+        </div>
+
+        <div class="data">
+
+            <div class="namepara">
+                <p>Student Name:</p>
+                <p id="name"></p>
+            </div>
+
+            <div class="agepara">
+                <p>Student Age:</p>
+                <p id="age"></p>
+            </div>
+
+            <div class="correctpara">
+                <p>Correct Answer:</p>
+                <p id="corrects"></p>
+            </div>
+
+            <div class="wrongpara">
+                <p>Wrong Selections:</p>
+                <p id="wrong"></p>
+            </div>
+
+            <div class="percentagepara">
+                <p>Percentage:</p>
+                <p id="per"></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+</html>
